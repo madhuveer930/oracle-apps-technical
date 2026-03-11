@@ -1,0 +1,13 @@
+in udemy 50 hours class by madhu 
+we need to use loat of tables but now in section 2 chsh order life cycle 
+1) item creation --------- mtl_system_item_b
+                            primary key -- inventory_item_id,
+2)onhand qty ----------- mtl_onhand_quantities
+3) add item to the price list -------- Oracle pricing manager global
+
+actual order to cash life cycle
+1) order entry ------- oe_order_headers_all ----- header_id
+                        oe-order_lines_all --------join is header_id
+2)booking ------------header level status         line level status 
+                            booked                 awaiting shipping
+>> we cant ship if there is no item in ware house  (master item (v1))
